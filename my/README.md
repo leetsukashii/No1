@@ -1,68 +1,30 @@
-Symfony Standard Edition
+自娱自乐的网站搭建
 ========================
-
-Welcome to the Symfony Standard Edition - a fully-functional Symfony
-application that you can use as the skeleton for your new applications.
-
-For details on how to download and get started with Symfony, see the
-[Installation][1] chapter of the Symfony Documentation.
-
-What's inside?
+By 峻酱
 --------------
 
-The Symfony Standard Edition is configured with the following defaults:
+目前的进度：
 
-  * An AppBundle you can use to start coding;
+  * 前端模板的基本风格已经完成；
 
-  * Twig as the only configured template engine;
+  * 后端index的控制器的登录功能写完，还未测试；
 
-  * Doctrine ORM/DBAL;
+  * 数据库内已有的表的关联基本完成；
 
-  * Swiftmailer;
+  * 前端的js实现了部分功能，例如画廊，置顶按钮等；
+ 
 
-  * Annotations enabled for everything.
+目前存在的几个问题：
 
-It comes pre-configured with the following bundles:
+  * session数据是否需要保存为数组？
 
-  * **FrameworkBundle** - The core Symfony framework bundle
+  * 前端js尚未重构，目前代码完全为面向过程的形式，准备先把功能实现再进行代码优化；
 
-  * [**SensioFrameworkExtraBundle**][6] - Adds several enhancements, including
-    template and routing annotation capability
+  * reactjs的应用正在进行中，觉得有一些麻烦，是否是自己没有习惯reactjs的编程思路？
+ 
+  * 准备在首页制作一个图片预览，使用具有一定规则的动态生成的CSS效果，但所想的可能无法实现，自己水平太水吧；
 
-  * [**DoctrineBundle**][7] - Adds support for the Doctrine ORM
+  * 图片路径暂时太静态，目前尚未进行该项优化；
 
-  * [**TwigBundle**][8] - Adds support for the Twig templating engine
 
-  * [**SecurityBundle**][9] - Adds security by integrating Symfony's security
-    component
-
-  * [**SwiftmailerBundle**][10] - Adds support for Swiftmailer, a library for
-    sending emails
-
-  * [**MonologBundle**][11] - Adds support for Monolog, a logging library
-
-  * **WebProfilerBundle** (in dev/test env) - Adds profiling functionality and
-    the web debug toolbar
-
-  * **SensioDistributionBundle** (in dev/test env) - Adds functionality for
-    configuring and working with Symfony distributions
-
-  * [**SensioGeneratorBundle**][13] (in dev/test env) - Adds code generation
-    capabilities
-
-  * **DebugBundle** (in dev/test env) - Adds Debug and VarDumper component
-    integration
-
-All libraries and bundles included in the Symfony Standard Edition are
-released under the MIT or BSD license.
-
-Enjoy!
-
-[1]:  https://symfony.com/doc/2.8/book/installation.html
-[6]:  https://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/index.html
-[7]:  https://symfony.com/doc/2.8/book/doctrine.html
-[8]:  https://symfony.com/doc/2.8/book/templating.html
-[9]:  https://symfony.com/doc/2.8/book/security.html
-[10]: https://symfony.com/doc/2.8/cookbook/email.html
-[11]: https://symfony.com/doc/2.8/cookbook/logging/monolog.html
-[13]: https://symfony.com/doc/2.8/bundles/SensioGeneratorBundle/index.html
+持续开发中。。。边学边用，感觉自己萌萌哒=。=
