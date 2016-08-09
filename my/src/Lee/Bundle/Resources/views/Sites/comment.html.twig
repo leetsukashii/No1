@@ -1,0 +1,19 @@
+{% extends 'LeeBundle::layout.html.twig' %}
+
+{% block maincontent %}
+    <div class="comment">
+        {% for comment in comments %}
+            {#<p>{{ comment.comment }} {{ comment.createAt|date('Y年m月d日 H:i:s') }}</p>#}
+            <p>{{ comment.comment }} {{ comment.createAt|date('Y-m-d H:i:s') }}</p>
+        {% endfor %}
+        <p id="ncomment"></p>
+        <div class="wcomment">
+            <label>写评论：
+                <textarea name="comment" required="required" style="resize: none"></textarea>
+                <span id="comment" style="cursor: pointer;" onclick="a();">评论</span>
+            </label>
+        </div>
+    </div>
+
+
+{% endblock %}

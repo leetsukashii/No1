@@ -1,0 +1,53 @@
+{% extends 'LeeBundle::layout.html.twig' %}
+
+{% block this %}
+    <div class="newsbg">
+        <div class="newsbgli"></div>
+        <div class="news">
+            <ul class="newsclone" id="newsclone">
+                <li id="lic0"></li>
+                <li id="lic1"></li>
+                <li id="lic2"></li>
+                <li id="lic3"></li>
+                <li id="lic4"></li>
+            </ul>
+            <ul class="newsshow" id="newsshow">
+                <li id="li0"></li>
+                <li id="li1"></li>
+                <li id="li2"></li>
+                <li id="li3"></li>
+                <li id="li4"></li>
+            </ul>
+            <div class="newspv">
+                <span id="news0"></span>
+                <span id="news1"></span>
+                <span id="news2"></span>
+                <span id="news3"></span>
+                <span id="news4"></span>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+
+        {#{% for r in results %}#}
+            {#<a href="{{ path('user') }}?{{ 'id=' }}{{ r.id }}">{{ r.username }}</a>#}
+            {#<br />#}
+        {#{% endfor %}#}
+        {#{% set b = [1,2,3,4,5] %}#}
+        {#这个写法超级重要！！！#}
+{% block maincontent %}
+    <div class="picpv">
+        <h2>最新图片（测试中。。。）</h2>
+    </div>
+    <div class="blogpv">
+        <h2>最新博客（分页功能开发中。。。）</h2>
+        <div>
+            {% for blog in blogs %}
+            <h3><a href="{{ path('blog') }}?{{ 'id=' }}{{ blog.id }}">{{ blog.title }}</a></h3>
+            <p>{{ blog.content }}</p>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
